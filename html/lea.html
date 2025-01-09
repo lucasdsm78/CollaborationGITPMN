@@ -1,0 +1,242 @@
+<!DOCTYME HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="descritption" content="Web site on minerals, there properties">
+  <meta name="keywords" content="minerals">
+  <meta name="author" content="Léa PAUCHOT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="../logo/favicon.ico">
+  <link rel="stylesheet" href="../css/lea.css">
+  <link rel="stylesheet" href="../css/Definition.css">
+  <link rel="stylesheet" href="../css/Carousel.css">
+  <link rel="stylesheet" href="../css/Articles.css">
+  <title> M&Co - System&Class Crystal </title>
+</head>
+
+<body>
+  <header>
+    <div class="site-header">
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="&#x1F50D; Search...">
+        <button type="submit" id="search-button"></button>
+      </div>
+      <block><a href="../main.htm"><img id="logo" src="../logo/logo_transparence.png" alt="logo"></a>
+      <h1>Minerals & co.</h1></block>
+    </div>
+  </header>
+  <div class="navbar" onmouseout="unToggleMenu()">
+    <span class="icon" onmouseover="toggleMenu()">&#9776;</span>
+    <nav class="navbar-links">
+      <ul>
+        <li><a href="../main.htm">What is a mineral ?</a></li>
+        <li><a href="properties.htm" onclick="toggleProperties()">Properties</a>
+        <ul id="properties-dropdown" class="hidden">
+          <li><a href="cristallinSystem&Class.htm">Cristallin system & class</a></li>
+          <li><a href="MohsScale.htm">Mohs Scale</a></li>
+          <li><a href="RefractiveIndex.htm">Refraction index</a></li>
+          <li><a href="Macle.htm">Macle</a></li>
+          <li><a href="Cleavage.htm">Cleavage</a></li>
+          <li><a href="Habitus.htm">Habitus</a></li>
+          <li><a href="Luster.htm">Luster</a></li>
+          <li><a href="Pleochroism.htm">Pleochroism</a></li>
+          <li><a href="ChemicalBehavior.htm">Chemical behaviour</a></li>
+          <li><a href="Magnetism.htm">Magnetism</a></li>
+          <li><a href="Density.htm">Density</a></li>
+          <li><a href="Fluorescence.htm">Fluorescence</a></li>
+          <li><a href="FusionTemperature.htm">Fusion temperature</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Map of minerals</a></li>
+        <li><a href="../list/list.htm">List</a></li>	
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+    <button class="contributionBtn"><a href="../forms/formAccueil.htm">DB & WebSite Contribution</a></button>
+    <!-- Vertical Menu -->
+    <nav class="navbar-links vertical-menu" onmouseover="toggleMenu()">
+      <span class="icon">&#9776;</span> <!-- Icône hamburger -->
+      <a href="../main.htm">What is a mineral ?</a>
+      <a href="properties.htm">Properties</a>
+      <div class="properties_vertical-menu">
+        <a href="cristallinSystem&Class.htm">Cristallin system & class</a> 
+        <a href="MohsScale.htm">Mohs Scale</a>
+        <a href="RefractiveIndex.htm">Refraction index</a>
+        <a href="Macle.htm">Macle</a>
+        <a href="Cleavage.htm">Cleavage</a>
+        <a href="Habitus.htm">Habitus</a>
+        <a href="Luster.htm">Luster</a>
+        <a href="Pleochroism.htm">Pleochroism</a>
+        <a href="ChemicalBehavior.htm">Chemical behaviour</a>
+        <a href="Magnetism.htm">Magnetism</a>
+        <a href="Density.htm">Density</a>
+        <a href="Fluorescence.htm">Fluorescence</a>
+        <a href="FusionTemperature.htm">Fusion temperature</a>
+      </div>
+      
+      <a href="#">Map of minerals</a>
+      <a href="../list/list.htm">List</a>	
+      <a href="#">About us</a>
+      </ul>
+    </nav>
+  </div>
+  <section>
+      <div class="content">
+        <h2>Cristallin system & class</h2>
+        <br>
+        <br>
+        <h3>What's the difference between cristallin system and class ?</h3>
+        <table id="definition">
+          <td>Crystal class is a fundamental concept in crystallography that refers to the symmetry of crystals. To understand this concept, one must first have an idea of ​​symmetry elements and point groups in crystallography.<br>
+          In summary, crystal class is a classification of crystals based on their internal symmetry, which is essential for understanding and predicting the properties of crystalline materials.</td>
+          <th class="center">&#8800;</th>
+          <td>A crystal system is a classification of crystal structures based on the symmetries and lattice parameters of the crystals. In crystallography, crystals are classified into different crystal systems according to the lengths of the axes and the angles between them. <br>Each crystal system is defined by a specific symmetry group and lattice parameters that define how the atoms are arranged in space.</td>
+        </table>
+      </div>
+      <br>
+      <br>
+      <div class="content">
+        <div id="Container_carousel">
+          <h3 class="center">Element of Symmetry</h3>
+          <p>Symmetry elements are operations that leave the crystal structure unchanged. These elements include:</p>
+          <br>
+          <div class="center_carousel">
+              <div id="carousel-container">
+              <div class="carousel">
+                <div class="property">
+                  <table>
+                    <th class="center">Rotation axes: </th>
+                    <td>rotation about an axis by a specific angle (360°/n, where n is an integer);</td>
+                    <td><img src="" alt=""></td>
+                  </table>
+                </div>
+                <div class="property">
+                  <table>
+                    <td><img src="" alt=""></td>
+                    <th class="center">Symmetry planes: </th>
+                    <td>reflection through a plane;</td>
+                  </table>
+                </div>
+                <div class="property">
+                  <table>
+                    <th class="center">Inversion center: </th>
+                    <td>inversion through a central point;</td>
+                    <td><img src="" alt=""></td>
+                  </table>
+                </div>
+                <div class="property">
+                  <table>
+                    <td><img src="" alt=""></td>
+                    <th class="center">Rotation-inversion axes: </th>
+                    <td>combination of a rotation followed by an inversion.</td>
+                  </table>
+                </div>
+              </div>
+              <div class="indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div> 
+      <script src="../js/Carousel.js"></script>
+      <br> 
+      <br>
+      <div class="content">
+        <h3 class="center">32 Cristallin classes</h3>
+        <br>
+        <p>The 32 crystal classes can be organized into 7 crystal systems according to the types of symmetry they exhibit. The crystal systems are:</p>
+        <br>
+        <div class="containerArticles">
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Cubic.htm" class="no_line">
+              <img src="../Icones/Cubic_picture.webp" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">I.<br>Cubic system or isometric</h4>
+            </a>
+            <p class="speechArticle">The cubic class of minerals refers to a specific category within the isometric crystal system, characterized by three equal axes that intersect at right angles. This symmetry often leads to a range of distinctive crystal shapes, such as cubes, octahedra, and dodecahedra. Common minerals in the cubic class include <a href="../properties/ClassSystemDetails/Cubic.htm">Read more</a></p>
+          </div>
+          <br>
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Tetragonal.htm" class="no_line">
+              <img src="../Icones/Tetragonal_picture.wepb" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">II.<br>Tetragonal system: </h4>
+            </a>
+            <p class="speechArticle">The tetragonal class of minerals is a category within the tetragonal crystal system, characterized by three axes: two are of equal length and are perpendicular to each other, while the third axis is of a different length and is also perpendicular to the other two. This results in a rectangular prism-like shape. <a href="../properties/ClassSystemDetails/Tetragonal.htm">Read more</a></p>
+          </div>
+          <br>
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Orthorhombic.htm" class="no_line">
+              <img src="../Icones/Orthorhombic_picture.webp" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">III.<br>Orthorhombic system: </h4>
+            </a>
+            <p class="speechArticle">The orthorhombic class of minerals is part of the orthorhombic crystal system, characterized by three mutually perpendicular axes that are all of different lengths. This unique arrangement leads to a variety of crystal forms, including prisms, plates, and dipyramids. <br>Minerals in the orthorhombic class <a href="../properties/ClassSystemDetails/Orthorhombic.htm">Read more</a></p>
+          </div>
+          <br>
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Hexagonal.htm" class="no_line">
+              <img src="../Icones/Hexagonal_picture.webp" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">IV.<br>Hexagonal system: </h4>          
+            </a>  
+            <p class="speechArticle">The hexagonal class of minerals is a category within the hexagonal crystal system, characterized by four axes: three of equal length that lie in a plane at 120-degree angles to each other, and a fourth axis that is perpendicular to the other three and of a different length. This arrangement results in a variety <a href="../properties/ClassSystemDetails/Hexagonal.htm">Read more</a></p>
+          </div>
+          <br>
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Rhomboedric.htm" class="no_line">
+              <img src="../Icones/Rhomboedric_picture.webp" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">V.<br>Rhomboedric or trigonal system: </h4>
+            </a>  
+            <p class="speechArticle">The rhombohedral class of minerals, also known as the trigonal system, is a category within the broader hexagonal crystal system. It is characterized by three equal-length axes that are oriented at oblique angles to one another, resulting in a rhombohedral shape. <br>Minerals in the rhombohedral class often <a href="../properties/ClassSystemDetails/Rhomboedric.htm">Read more</a></p>
+          </div>
+          <br>
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Monoclinic.htm" class="no_line">
+              <img src="../Icones/Monoclinic_picture.webp" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">VI.<br>Monoclinic system: </h4>
+            </a>
+            <p class="speechArticle">The monoclinic class of minerals is part of the monoclinic crystal system, characterized by three axes of unequal lengths, with two axes perpendicular to each other and the third axis inclined to the other two. This results in a unique crystal symmetry and shape, often leading to forms such as prisms and plates. <a href="../properties/ClassSystemDetails/Monoclinic.htm">Read more</a></p>
+          </div>
+          <br>
+          <div class="Article">
+            <a href="../properties/ClassSystemDetails/Triclinic.htm" class="no_line">
+              <img src="../Icones/Triclinic_picture.webp" alt="Forme du system" height="200px" width="340px">
+              <h4 class="center">VII.<br>Triclinic system: </h4>
+            </a>
+            <p class="speechArticle">The triclinic class of minerals is part of the triclinic crystal system, characterized by three axes of unequal lengths that are all inclined to each other at oblique angles. This lack of symmetry results in a more complex crystal shape, often leading to forms such as irregular prisms and plates. <a href="../properties/ClassSystemDetails/Triclinic.htm">Read more</a></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="content">
+        <h3>Importance of cristallin classes</h3>
+        <br>
+        <p>Crystal classes are crucial for:</p>
+        <ul class="list">
+          <li><b>Mineral Identification:</b> Symmetry helps to identify and classify minerals.</li>
+          <li><b>Physical Properties:</b> The physical properties (optical, magnetic, etc.) of crystals depend on their symmetry.</li>
+          <li><b>Technological Applications:</b> Understanding crystal classes helps to design materials with specific properties for various applications (electronics, optics, etc.).</li>
+        </ul>
+      </div>
+    </div> 
+    <br>
+    <script src="../js/lea.js" defer></script>
+  </section>
+<footer>
+  <a href="mailto:lea.pauchot@gmail.com" id="contact">  &#x2709; Contact us</a>
+  <br>
+  <pre class="center">
+    Why this site ?
+    This web site is design to dusted off the mineralogy
+    For all minerals lovers, scientist or not, enjoy !!!
+    Site architecture :
+      
+    Copyright 1999-2024 by Refsnes Data.
+
+  </pre>
+  <br>
+</footer>
+</body>
+</htlm>

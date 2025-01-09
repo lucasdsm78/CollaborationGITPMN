@@ -1,0 +1,350 @@
+:root {
+  --main-color: #d2d4d7;
+  --color2: #bac3cd;
+  --color3: #8a96a2;
+  --font-size: 16px;
+}
+
+.center {
+  text-align:center !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* HEADER */
+/* Header au-dessus de la navbar */
+.site-header {
+  color: white;
+  padding: 2px 0;
+  position: relative;
+  z-index: 999; /* Assurer que le header soit au-dessus de la navbar */
+}
+header {
+  color:white;
+  background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(126,127,127,1) 100%);
+}
+#logo {
+  margin: 0 0 0 10;
+}
+h1 {
+  display:inline;
+  font-size: 5vw;
+  margin-left:15;
+}
+
+
+/* NAVBAR*/
+.navbar {
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks the navbar to the top of the viewport */
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: rgba(5,5,5,1);
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000; /* Ensures the navbar is above other content */
+  box-shadow: 0 4px 2px -2px gray; /* Adds shadow for separation */
+}
+
+/* Liens de navigation */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {
+  color: var(--color2);
+}
+
+/* Icône de menu hamburger */
+.icon {
+  display: none;
+  background-color: rgba(5,5,5,1);
+  color: white;
+  font-size: 30px;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+/* Menu vertical à gauche pour les petits écrans */
+.navbar-links.vertical-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -150px; /* Cache le menu à gauche */
+  width: 150px;
+  height: 100%;
+  background-color: #555;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+}
+
+.navbar-links.vertical-menu a {
+  padding: 14px;
+  text-align: left;
+  color: white;
+  display: block;
+}
+
+.navbar-links.vertical-menu a:hover {
+  color: black;
+}
+
+.contributionBtn {
+  position: fixed; /* Fixed positioning, so it stays in place when scrolling */
+  top: 100px; /* Adjust the vertical position of the button */
+  right: 50px; /* 50px away from the right edge of the window */
+  padding: 0px 5px; /* Padding inside the button */
+  background-color: var(--color2); /* Button background color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+.contributionBtn:hover {
+  background-color: var(--color3); /* Change background on hover */
+  color:var(--color2);
+}
+/* Si la fenêtre est petite (max 800px), afficher l'icône hamburger et le menu vertical */
+@media screen and (max-width: 800px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .icon {
+    display: block; /* Afficher l'icône hamburger */
+  }
+
+  .navbar-links.vertical-menu.active {
+    left: 0; /* Afficher le menu vertical lorsqu'il est actif */
+    display: block;
+  }
+  .navbar-links.vertical-menu .icon {
+    background-color: #555;
+  }
+  .properties_vertical-menu {
+    padding: 0 0 0 5%;
+    font-size: 12;
+  }
+  .contributionBtn {
+    top: 165px; /* Adjust the vertical position of the button */
+    right: 50px; /* 50px away from the right edge of the window */
+  }
+}
+/* Styles pour la scrollbar */
+.navbar-links.vertical-menu::-webkit-scrollbar {
+  width: 12px; /* Largeur de la scrollbar */
+}
+
+.navbar-links.vertical-menu::-webkit-scrollbar-track {
+  background: #555; /* Couleur de fond de la scrollbar */
+  border:1px solid black;
+}
+
+.navbar-links.vertical-menu::-webkit-scrollbar-thumb {
+  background:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(87, 87, 87) 50%, rgba(0,0,0,1) 100%); /* Couleur du curseur de la scrollbar */
+  border-radius: 4px; /* Arrondir les bords du curseur */
+  border:1px solid black;
+}
+
+
+
+/* Ajouter de l'espace au début de la page pour éviter que la navbar recouvre le contenu */
+.content {
+  padding-top: 160px; /* Assure que le contenu commence après le header et la navbar */
+}
+.imagecenter {
+  width:30vw;
+  aspect-ratio: 1 / 1;
+}
+/**/
+.systemDescription {
+  padding: 10px;
+}
+#crystalClassUse {
+  padding: 35px;
+}
+/*Siderbar for the list of minerals*/
+.container{
+  display:flex;
+}
+ul.no-bullets, .nodot {
+  list-style-type: none;
+}
+#mineralsList{
+  list-style-type: none;
+  max-height: 500px;
+  overflow-y: auto
+}
+strong{
+  font-size:160%;
+}
+
+#contact {
+  display:block;
+  text-align:center;
+}
+.divMineralDefinition{
+  margin-bottom:4em;
+}
+
+.statMinerals{
+  text-align:center;
+  font-size:150%;
+}
+
+h2 {
+  text-align:center;
+  font-size:1.6em;
+  margin-top:0.3em;
+}
+
+/* Style for the body */
+.list,#groupLuster{
+  margin:0 0 0 3%;
+}
+#mineralDefinition {
+  float: left;
+  width: 55%;
+}
+body p{
+  text-align:justify;
+}
+div ol li{
+  margin: 0 30px;
+}
+    
+#syntheticMinerals {
+  float: right;
+  width: 40%;
+  background-color: #E06B52;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 10px 0 30px;
+}
+
+.content {
+  padding:0 10% 0 10%
+}
+
+div ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.navbar-links ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10%;
+  border: 1px solid #ccc;
+  z-index: 1;
+  column-count: 2; /* Répartition sur deux colonnes */
+  column-gap: 20px; /* Espacement entre les colonnes */
+}
+nav ul li a:hover {
+  color: var(--color2); /* Couleur du lien au survol */
+}
+
+/* Style for the dropdown menu */
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    border-top: 1px solid #666;
+    z-index: 1000;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul ul li a {
+    padding: 10px 20px;
+}
+
+/* Show dropdown menu when parent is hovered */
+ul li:hover > ul {
+    display: block;
+}
+
+
+/* Style for the search bar */
+.search-container {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#search-bar {
+    padding: 8px;
+    border: none;
+    font-family: Arial, sans-serif; /* Vous pouvez utiliser une police qui prend en charge le glyphe Unicode */
+    font-size: 14px;
+}
+
+#search-button {
+    padding: 8px 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button img {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(80%);
+}
+
+#search-button:hover img {
+    filter: grayscale(0%);
+}
+/* ----------------------------------------- */
+/*Section*/
+i {
+  color:lightgray;
+}
+
+th,td {
+  padding:0 10px 0 10px;
+  max-width:50%;
+}
+
+/*Footer*/
+footer {
+  background: rgb(5,5,5);
+  background: linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(126,127,127,1) 100%);
+  color: white;
+  text-align:center;
+}
+

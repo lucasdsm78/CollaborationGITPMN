@@ -1,0 +1,44 @@
+#Container_carousel {
+    background-color: var(--main-color);
+    border-radius: 40px;
+    padding:10px;
+}
+.center_carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel-container {
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.property {
+    min-width: 100%;
+    padding: 0 5px 0 5px;
+}
+
+.indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 40%;
+    background-color: #fffefe;
+}
+
+.indicator.active {
+    background-color: #333;
+}

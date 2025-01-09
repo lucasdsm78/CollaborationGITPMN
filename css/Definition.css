@@ -1,0 +1,9 @@
+#definition {
+    display:flex;
+}
+#definition th {
+    width:10%;
+}
+#definition td {
+    width:45%;
+}
