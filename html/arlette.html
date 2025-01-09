@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Mini Site</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(to right, #2c3e50, #2980b9);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 10px 0;
+            opacity: 0.8;
+        }
+
+        /* Students Section */
+        .students {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            margin-top: 30px;
+        }
+
+        .student {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .student:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .student img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .student-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .student-info h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 40px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .students {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .students {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#students">Étudiants</a>
+        <a href="#about">À propos</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Bienvenue sur Mon Mini Site</h1>
+        <p>Un site simple mais esthétique pour vous inspirer</p>
+    </header>
+
+    <!-- Students Section -->
+    <section id="students" class="students">
+        <div class="student">
+            <img src="https://via.placeholder.com/250x200" alt="Arlette">
+            <div class="student-info">
+                <a href="html/arlette.html">
+                    <h2>ATTINDAN KONAN Arlette</h2>
+                </a>
+                <p>Une étudiante brillante en développement web</p>
+            </div>
+        </div>
+
+        <div class="student">
+            <img src="https://via.placeholder.com/250x200" alt="Maxime">
+            <div class="student-info">
+                <a href="html/maxime.html">
+                    <h2>Maxime Dupont</h2>
+                </a>
+                <p>Passionné par l'innovation technologique</p>
+            </div>
+        </div>
+
+        <div class="student">
+            <img src="https://via.placeholder.com/250x200" alt="Sophie">
+            <div class="student-info">
+                <a href="html/sophie.html">
+                    <h2>Sophie Lambert</h2>
+                </a>
+                <p>Développeuse front-end spécialisée en UI/UX</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mon Mini Site. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
